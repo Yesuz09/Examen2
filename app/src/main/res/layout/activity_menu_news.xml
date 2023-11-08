@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    tools:context=".activity_Menu_News"
     android:background="@color/black"
     >
-
     <TextView
 
         android:id="@+id/Menu"
@@ -75,16 +74,15 @@
         android:id="@+id/Text1Chats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#EDB8F6"
-        android:text="Aqui se mostrara una tarea"
-        app:layout_constraintTop_toBottomOf="@+id/BtChats"
+        android:background="#EDB8FF"
+        android:text="Aqui se mostrara una noticia"        app:layout_constraintTop_toBottomOf="@+id/BtChats"
         tools:ignore="MissingConstraints" />
     <TextView
         android:id="@+id/Text2Chats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#EDB8F6"
-        android:text="Aqui se mostrara una tarea"
+        android:text="Aqui se mostrara una noticia"
         app:layout_constraintTop_toBottomOf="@+id/Text1Chats"
         tools:ignore="MissingConstraints" />
     <TextView
@@ -92,9 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#EDB8F6"
-        android:text="Aqui se mostrara una tarea"
-        app:layout_constraintTop_toBottomOf="@+id/Text2Chats"
+        android:text="Aqui se mostrara una noticia"        app:layout_constraintTop_toBottomOf="@+id/Text2Chats"
         tools:ignore="MissingConstraints" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,17 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    tools:context=".activity_menu_recursos"
+    android:background="@color/black">
+
 
     <TextView
+
         android:id="@+id/Menu"
         android:layout_width="409dp"
         android:layout_height="25dp"
-        android:background="#FFBDBD"
-
+        android:background="@color/black"
         android:text="Menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+
+        />
 
     <Button
         android:id="@+id/BtChats"
@@ -33,7 +39,7 @@
         app:circularflow_radiusInDP="none"
         app:layout_constraintStart_toEndOf="@+id/BtChats"
         tools:layout_editor_absoluteY="25dp"
-         />
+        tools:ignore="MissingConstraints" />
     <Button
         android:id="@+id/BtSourse"
         android:layout_width="wrap_content"
@@ -41,7 +47,8 @@
         android:text="Recusrsos"
         app:circularflow_radiusInDP="none"
         app:layout_constraintStart_toEndOf="@+id/BtTareas"
-        tools:layout_editor_absoluteY="25dp" />
+        tools:layout_editor_absoluteY="25dp"
+        tools:ignore="MissingConstraints" />
     <Button
         android:id="@+id/BtNews"
         android:layout_width="wrap_content"
@@ -49,7 +56,8 @@
         android:text="News"
         app:circularflow_radiusInDP="none"
         app:layout_constraintStart_toEndOf="@+id/BtSourse"
-        tools:layout_editor_absoluteY="25dp" />
+        tools:layout_editor_absoluteY="25dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/FBtChats"
@@ -58,6 +66,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="25dp"
         android:clickable="true"
+        android:contentDescription="Boton agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />
@@ -67,23 +76,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#EDB8F6"
-        android:text="Aqui se mostrara un chat"
-        app:layout_constraintTop_toBottomOf="@+id/BtChats" />
+        android:text="Aqui se mostrara una carpeta"
+        app:layout_constraintTop_toBottomOf="@+id/BtChats"
+        tools:ignore="MissingConstraints" />
     <TextView
         android:id="@+id/Text2Chats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#EDB8F6"
-        android:text="Aqui se mostrara un chat"
-        app:layout_constraintTop_toBottomOf="@+id/Text1Chats" />
+        android:text="Aqui se mostrara una carpeta"
+        app:layout_constraintTop_toBottomOf="@+id/Text1Chats"
+        tools:ignore="MissingConstraints" />
     <TextView
         android:id="@+id/Text3Chats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#EDB8F6"
-        android:text="Aqui se mostrara un chat"
-        app:layout_constraintTop_toBottomOf="@+id/Text2Chats" />
-
+        android:text="Aqui se mostrara una carpeta"
+        app:layout_constraintTop_toBottomOf="@+id/Text2Chats"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

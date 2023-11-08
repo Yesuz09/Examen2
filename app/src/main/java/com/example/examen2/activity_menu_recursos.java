@@ -1,17 +1,17 @@
 package com.example.examen2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 import android.content.Intent;
 import android.widget.Button;
+import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class activity_menu_recursos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu_recursos);
+
         Button BtChats = findViewById(R.id.BtChats);
         Button BtTarea = findViewById(R.id.BtTareas);
         Button BtSourse = findViewById(R.id.BtSourse);
@@ -21,18 +21,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         BtTarea.setOnClickListener(v -> {
-        Intent intent = new Intent (v.getContext(),MenuTaraes.class);
-        startActivity(intent);
+            Intent intent = new Intent (v.getContext(),MenuTaraes.class);
+            startActivity(intent);
         });
         BtSourse.setOnClickListener(v -> {
-        Intent intent = new Intent (v.getContext(),activity_menu_recursos.class);
-        startActivity(intent);
+            Intent intent = new Intent (v.getContext(),activity_menu_recursos.class);
+            startActivity(intent);
         });
         BtNews.setOnClickListener(v -> {
-        Intent intent = new Intent (v.getContext(),activity_Menu_News.class);
-        startActivity(intent);
-        });}
+            Intent intent = new Intent (v.getContext(),activity_Menu_News.class);
+            startActivity(intent);
+        });
 
-
-
+    }
 }
